@@ -1,0 +1,5 @@
+.buttonSecondary {
+  background-color: transparent;
+  border: 1px solid var(--water-70);
+  color: var(--water-70);
+}

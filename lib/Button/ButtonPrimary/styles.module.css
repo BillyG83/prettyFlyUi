@@ -1,0 +1,5 @@
+.buttonPrimary {
+  background-color: var(--water-70);
+  border: 1px solid var(--water-70);
+  color: var(--normal-00);
+}

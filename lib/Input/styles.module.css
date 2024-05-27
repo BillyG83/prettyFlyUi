@@ -1,0 +1,14 @@
+.label {
+  display: block;
+  padding-bottom: 4px;
+  width: 100%;
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid var(--normal-99);
+  background-color: var(--normal-00);
+  display: block;
+  padding: 8px;
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.buttonBase {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 8px;
+}
+
+.buttonBase:active {
+  transform: translateY(1px);
+}
+
+.buttonBase:disabled,
+.buttonBase[data-loading="true"] {
+  cursor: default;
+  filter: grayscale(0.7);
+  opacity: 0.7;
+  pointer-events: none;
+  touch-action: none;
+}
