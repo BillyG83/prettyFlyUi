@@ -18,8 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Linting */
+    "paths": {
+      "@/*": ["./*"],
+      "@/lib/*": ["./lib/*"],
+      "@/storybook/*": ["./storybook/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["lib"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

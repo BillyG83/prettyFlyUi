@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Pretty Fly UI :bowtie:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+All the girlies say its pretty fly for a UI
 
-Currently, two official plugins are available:
+- Open source React component library
+- Client side, server side, beach side
+- Sweet docs and copy and paste examples
+- Frontend by frontend end fans
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Does this work with Next.js?
 
-## Expanding the ESLint configuration
+Importing CSS from external npm packages works since Next.js 13.4:
+https://github.com/vercel/next.js/discussions/27953#discussioncomment-5831478
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you use an older version of Next.js you can install next-transpile-modules
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Here is a Next.js demo repo: https://github.com/receter/my-nextjs-component-library-consumer
