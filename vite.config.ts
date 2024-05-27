@@ -22,18 +22,26 @@ export default defineConfig({
           .sync("lib/**/*.{ts,tsx}", {
             ignore: [
               "lib/**/*.d.ts",
-              "lib/**/*.stories.tsx",
+              "lib/**/*.stories.*",
+              "lib/**/*.stories.d.*",
               "lib/**/*.test.*",
+              "lib/**/*.test.d.*",
             ],
           })
-          .map((file) => [
-            // The name of the entry point
-            // lib/nested/foo.ts becomes nested/foo
-            relative("lib", file.slice(0, file.length - extname(file).length)),
-            // The absolute path to the entry file
-            // lib/nested/foo.ts becomes /project/lib/nested/foo.ts
-            fileURLToPath(new URL(file, import.meta.url)),
-          ])
+          .map((file) => {
+            console.log("file", file);
+            return [
+              // The name of the entry point
+              // lib/nested/foo.ts becomes nested/foo
+              relative(
+                "lib",
+                file.slice(0, file.length - extname(file).length)
+              ),
+              // The absolute path to the entry file
+              // lib/nested/foo.ts becomes /project/lib/nested/foo.ts
+              fileURLToPath(new URL(file, import.meta.url)),
+            ];
+          })
       ),
       output: {
         assetFileNames: "assets/[name][extname]",
