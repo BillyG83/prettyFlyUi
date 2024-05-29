@@ -1,26 +1,21 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Input from "./Input";
+import { default as InputComponent } from "./Input";
 
 const meta = {
   title: "Input",
-  component: Input,
+  component: InputComponent,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {
-    label: {
-      control: "text",
-    },
-  },
-} satisfies Meta<typeof Input>;
+  argTypes: {},
+} satisfies Meta<typeof InputComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const World: Story = {
+export const Input: Story = {
   args: {
-    label: "Hello World!",
     id: "input",
   },
 };

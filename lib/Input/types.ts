@@ -1,11 +1,7 @@
-import { InputHTMLAttributes } from 'react'
+import { InputHTMLAttributes } from "react";
 
-type BaseInputProps = InputHTMLAttributes<HTMLInputElement>
+type BaseInputProps = InputHTMLAttributes<HTMLInputElement>;
 
-interface AdditionalInputProps {
-  id: string
-  loading?: boolean
-  label?: string
-}
+interface AdditionalInputProps {}
 
-export type TInputProps = BaseInputProps & AdditionalInputProps
+export type TInputProps = BaseInputProps & AdditionalInputProps;
