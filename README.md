@@ -5,7 +5,7 @@ All the girlies say its pretty fly for a UI
 - Open source React component library
 - Client side, server side, beach side
 - Sweet docs and copy and paste examples
-- Frontend by frontend end fans
+- Frontend by frontend fans
 
 ## Does this work with Next.js?
 
