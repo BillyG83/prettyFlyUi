@@ -1,12 +1,10 @@
-import { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes } from "react";
 
-type BaseTButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+type BaseIButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-interface AdditionalTButtonProps {
+export interface IButtonProps extends BaseIButtonProps {
   /**
    * disables button and shows loading spinner
    */
-  isLoading?: boolean
+  isLoading?: boolean;
 }
-
-export type TButtonProps = BaseTButtonProps & AdditionalTButtonProps

@@ -1,8 +1,8 @@
 import { ButtonBase } from "../ButtonBase";
-import { TButtonProps } from "../types";
+import { IButtonProps } from "../types";
 import styles from "./styles.module.css";
 
-const ButtonSecondary = (props: TButtonProps) => {
+const ButtonSecondary = (props: IButtonProps) => {
   return <ButtonBase {...props} className={styles.buttonSecondary} />;
 };
 

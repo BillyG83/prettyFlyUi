@@ -2,10 +2,13 @@
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
+  border: none;
+  color: var(--normal-10);
   cursor: pointer;
   display: flex;
   gap: 12px;
   justify-content: center;
+  outline: none;
   padding: 8px;
 }
 

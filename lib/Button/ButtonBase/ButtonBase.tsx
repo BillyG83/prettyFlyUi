@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { TButtonProps } from "../types";
+import { IButtonProps } from "../types";
 import styles from "./styles.module.css";
 
-const ButtonBase = ({ children, isLoading, ...props }: TButtonProps) => {
+const ButtonBase = ({ children, isLoading, ...props }: IButtonProps) => {
   return (
     <button
       {...props}
