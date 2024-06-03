@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { default as InputComponent } from "./Input";
 
 const meta = {
-  title: "Input",
+  title: "Form/Input",
   component: InputComponent,
   parameters: {
     layout: "centered",
@@ -17,5 +17,6 @@ type Story = StoryObj<typeof meta>;
 export const Input: Story = {
   args: {
     id: "input",
+    placeholder: "enter text",
   },
 };

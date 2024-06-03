@@ -1,7 +1,8 @@
 .input {
+  background-color: var(--normal-10);
   border-radius: 4px;
-  border: 1px solid var(--normal-99);
-  background-color: var(--normal-00);
+  border: 1px solid var(--normal-10);
+  color: var(--normal-90);
   display: block;
   padding: 8px;
   width: 100%;
