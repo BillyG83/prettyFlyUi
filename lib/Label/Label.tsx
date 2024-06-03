@@ -1,8 +1,13 @@
+import clsx from "clsx";
 import { ILabelProps } from "./types";
 import styles from "./styles.module.css";
 
 const Input = (props: ILabelProps) => {
-  return <label className={styles.label}>{props.children}</label>;
+  return (
+    <label className={clsx(styles.label, props.className)}>
+      {props.children}
+    </label>
+  );
 };
 
 export default Input;
