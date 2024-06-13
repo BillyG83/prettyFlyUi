@@ -134,8 +134,9 @@
   --layer-modal: 10;
   --layer-overlay: 20;
 
-  /* Layout - Spacing */
+  /* Layout - Spacing and Size */
   --space: 4px;
+  --size: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
