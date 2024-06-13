@@ -1,39 +1,274 @@
 :root {
-  --electric-40: rgb(182, 234, 92);
-  --electric-60: rgb(229, 206, 56);
-  --fire-50: rgb(221, 96, 60);
-  --ghost-50: rgb(145, 103, 228);
-  --grass-20: rgb(47, 228, 171);
-  --grass-50: rgb(115, 172, 49);
-  --grass-80: rgb(22, 150, 142);
-  --normal-00: rgb(255, 255, 255);
-  --normal-10: rgb(217, 236, 243);
-  --normal-50: rgb(157, 189, 200);
-  --normal-90: rgb(9, 16, 17);
-  --normal-99: rgb(0, 0, 0);
-  --water-30: rgb(60, 210, 221);
-  --water-70: rgb(54, 59, 129);
+  /* Water type colors (blue) */
+  --color-water-00: #000033;
+  --color-water-10: #001166;
+  --color-water-20: #002299;
+  --color-water-30: #0033cc;
+  --color-water-40: #0044ff;
+  --color-water-50: #3366ff;
+  --color-water-60: #6688ff;
+  --color-water-70: #99aaff;
+  --color-water-80: #ccd4ff;
+  --color-water-90: #e6eaff;
+  --color-water-99: #f2f6ff;
+
+  /* Fire type colors (red) */
+  --color-fire-00: #330000;
+  --color-fire-10: #660000;
+  --color-fire-20: #990000;
+  --color-fire-30: #cc0000;
+  --color-fire-40: #ff0000;
+  --color-fire-50: #ff3333;
+  --color-fire-60: #ff6666;
+  --color-fire-70: #ff9999;
+  --color-fire-80: #ffcccc;
+  --color-fire-90: #ffe6e6;
+  --color-fire-99: #fff2f2;
+
+  /* Electric type colors (yellow) */
+  --color-electric-00: #333300;
+  --color-electric-10: #666600;
+  --color-electric-20: #999900;
+  --color-electric-30: #cccc00;
+  --color-electric-40: #ffff00;
+  --color-electric-50: #ffff33;
+  --color-electric-60: #ffff66;
+  --color-electric-70: #ffff99;
+  --color-electric-80: #ffffcc;
+  --color-electric-90: #ffffe6;
+  --color-electric-99: #fffff2;
+
+  /* Ghost type colors (purple) */
+  --color-ghost-00: #190033;
+  --color-ghost-10: #330066;
+  --color-ghost-20: #4d0099;
+  --color-ghost-30: #6600cc;
+  --color-ghost-40: #8000ff;
+  --color-ghost-50: #9933ff;
+  --color-ghost-60: #b366ff;
+  --color-ghost-70: #cc99ff;
+  --color-ghost-80: #e6ccff;
+  --color-ghost-90: #f2e6ff;
+  --color-ghost-99: #f9f2ff;
+
+  /* Normal type colors (grey) */
+  --color-normal-00: #1a1a1a;
+  --color-normal-10: #333333;
+  --color-normal-20: #4d4d4d;
+  --color-normal-30: #666666;
+  --color-normal-40: #808080;
+  --color-normal-50: #999999;
+  --color-normal-60: #b3b3b3;
+  --color-normal-70: #cccccc;
+  --color-normal-80: #e6e6e6;
+  --color-normal-90: #f2f2f2;
+  --color-normal-99: #fafafa;
+
+  /* Grass type colors (green) */
+  --color-grass-00: #003300;
+  --color-grass-10: #006600;
+  --color-grass-20: #009900;
+  --color-grass-30: #00cc00;
+  --color-grass-40: #00ff00;
+  --color-grass-50: #33ff33;
+  --color-grass-60: #66ff66;
+  --color-grass-70: #99ff99;
+  --color-grass-80: #ccffcc;
+  --color-grass-90: #e6ffe6;
+  --color-grass-99: #f2fff2;
+
+  /* Fairy type colors (pink) */
+  --color-fairy-00: #33001a;
+  --color-fairy-10: #660033;
+  --color-fairy-20: #99004d;
+  --color-fairy-30: #cc0066;
+  --color-fairy-40: #ff0080;
+  --color-fairy-50: #ff3399;
+  --color-fairy-60: #ff66b3;
+  --color-fairy-70: #ff99cc;
+  --color-fairy-80: #ffccdf;
+  --color-fairy-90: #ffe6f2;
+  --color-fairy-99: #fff2f9;
+
+  /* Rock type colors (orange) */
+  --color-rock-00: #331a00;
+  --color-rock-10: #663300;
+  --color-rock-20: #994d00;
+  --color-rock-30: #cc6600;
+  --color-rock-40: #ff8000;
+  --color-rock-50: #ff9933;
+  --color-rock-60: #ffb366;
+  --color-rock-70: #ffcc99;
+  --color-rock-80: #ffe6cc;
+  --color-rock-90: #fff2e6;
+  --color-rock-99: #fff9f2;
+
+  /* Ice type colors (pale blue) */
+  --color-ice-00: #003333;
+  --color-ice-10: #006666;
+  --color-ice-20: #009999;
+  --color-ice-30: #00cccc;
+  --color-ice-40: #00ffff;
+  --color-ice-50: #33ffff;
+  --color-ice-60: #66ffff;
+  --color-ice-70: #99ffff;
+  --color-ice-80: #ccffff;
+  --color-ice-90: #e6ffff;
+  --color-ice-99: #f2ffff;
+
+  /* Bug type colors (pale green) */
+  --color-bug-00: #1a3300;
+  --color-bug-10: #336600;
+  --color-bug-20: #4d9900;
+  --color-bug-30: #66cc00;
+  --color-bug-40: #80ff00;
+  --color-bug-50: #99ff33;
+  --color-bug-60: #b3ff66;
+  --color-bug-70: #ccff99;
+  --color-bug-80: #e6ffcc;
+  --color-bug-90: #f2ffe6;
+  --color-bug-99: #f9fff2;
+
+  /* Layout - Z-Index */
   --layer-screen: 1;
   --layer-modal: 10;
   --layer-overlay: 20;
+
+  /* Layout - Spacing */
+  --space: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --electric-60: rgb(182, 234, 92);
-    --electric-40: rgb(229, 206, 56);
-    --fire-50: rgb(221, 96, 60);
-    --ghost-50: rgb(145, 103, 228);
-    --grass-80: rgb(47, 228, 171);
-    --grass-50: rgb(115, 172, 49);
-    --grass-20: rgb(22, 150, 142);
-    --normal-99: rgb(255, 255, 255);
-    --normal-90: rgb(217, 236, 243);
-    --normal-50: rgb(157, 189, 200);
-    --normal-10: rgb(9, 16, 17);
-    --normal-00: rgb(0, 0, 0);
-    --water-70: rgb(60, 210, 221);
-    --water-30: rgb(54, 59, 129);
+    /* Water type colors (blue) */
+    --color-water-00: #f2f6ff;
+    --color-water-10: #e6eaff;
+    --color-water-20: #ccd4ff;
+    --color-water-30: #99aaff;
+    --color-water-40: #6688ff;
+    --color-water-50: #3366ff;
+    --color-water-60: #0044ff;
+    --color-water-70: #0033cc;
+    --color-water-80: #002299;
+    --color-water-90: #001166;
+    --color-water-99: #000033;
+
+    /* Fire type colors (red) */
+    --color-fire-00: #fff2f2;
+    --color-fire-10: #ffe6e6;
+    --color-fire-20: #ffcccc;
+    --color-fire-30: #ff9999;
+    --color-fire-40: #ff6666;
+    --color-fire-50: #ff3333;
+    --color-fire-60: #ff0000;
+    --color-fire-70: #cc0000;
+    --color-fire-80: #990000;
+    --color-fire-90: #660000;
+    --color-fire-99: #330000;
+
+    /* Electric type colors (yellow) */
+    --color-electric-00: #fffff2;
+    --color-electric-10: #ffffe6;
+    --color-electric-20: #ffffcc;
+    --color-electric-30: #ffff99;
+    --color-electric-40: #ffff66;
+    --color-electric-50: #ffff33;
+    --color-electric-60: #ffff00;
+    --color-electric-70: #cccc00;
+    --color-electric-80: #999900;
+    --color-electric-90: #666600;
+    --color-electric-99: #333300;
+
+    /* Ghost type colors (purple) */
+    --color-ghost-00: #f9f2ff;
+    --color-ghost-10: #f2e6ff;
+    --color-ghost-20: #e6ccff;
+    --color-ghost-30: #cc99ff;
+    --color-ghost-40: #b366ff;
+    --color-ghost-50: #9933ff;
+    --color-ghost-60: #8000ff;
+    --color-ghost-70: #6600cc;
+    --color-ghost-80: #4d0099;
+    --color-ghost-90: #330066;
+    --color-ghost-99: #190033;
+
+    /* Normal type colors (grey) */
+    --color-normal-00: #fafafa;
+    --color-normal-10: #f2f2f2;
+    --color-normal-20: #e6e6e6;
+    --color-normal-30: #cccccc;
+    --color-normal-40: #b3b3b3;
+    --color-normal-50: #999999;
+    --color-normal-60: #808080;
+    --color-normal-70: #666666;
+    --color-normal-80: #4d4d4d;
+    --color-normal-90: #333333;
+    --color-normal-99: #1a1a1a;
+
+    /* Grass type colors (green) */
+    --color-grass-00: #f2fff2;
+    --color-grass-10: #e6ffe6;
+    --color-grass-20: #ccffcc;
+    --color-grass-30: #99ff99;
+    --color-grass-40: #66ff66;
+    --color-grass-50: #33ff33;
+    --color-grass-60: #00ff00;
+    --color-grass-70: #00cc00;
+    --color-grass-80: #009900;
+    --color-grass-90: #006600;
+    --color-grass-99: #003300;
+
+    /* Fairy type colors (pink) */
+    --color-fairy-00: #fff2f9;
+    --color-fairy-10: #ffe6f2;
+    --color-fairy-20: #ffccdf;
+    --color-fairy-30: #ff99cc;
+    --color-fairy-40: #ff66b3;
+    --color-fairy-50: #ff3399;
+    --color-fairy-60: #ff0080;
+    --color-fairy-70: #cc0066;
+    --color-fairy-80: #99004d;
+    --color-fairy-90: #660033;
+    --color-fairy-99: #33001a;
+
+    /* Rock type colors (orange) */
+    --color-rock-00: #fff9f2;
+    --color-rock-10: #fff2e6;
+    --color-rock-20: #ffe6cc;
+    --color-rock-30: #ffcc99;
+    --color-rock-40: #ffb366;
+    --color-rock-50: #ff9933;
+    --color-rock-60: #ff8000;
+    --color-rock-70: #cc6600;
+    --color-rock-80: #994d00;
+    --color-rock-90: #663300;
+    --color-rock-99: #331a00;
+
+    /* Ice type colors (pale blue) */
+    --color-ice-00: #f2ffff;
+    --color-ice-10: #e6ffff;
+    --color-ice-20: #ccffff;
+    --color-ice-30: #99ffff;
+    --color-ice-40: #66ffff;
+    --color-ice-50: #33ffff;
+    --color-ice-60: #00ffff;
+    --color-ice-70: #00cccc;
+    --color-ice-80: #009999;
+    --color-ice-90: #006666;
+    --color-ice-99: #003333;
+
+    /* Bug type colors (pale green) */
+    --color-bug-00: #f9fff2;
+    --color-bug-10: #f2ffe6;
+    --color-bug-20: #e6ffcc;
+    --color-bug-30: #ccff99;
+    --color-bug-40: #b3ff66;
+    --color-bug-50: #99ff33;
+    --color-bug-60: #80ff00;
+    --color-bug-70: #66cc00;
+    --color-bug-80: #4d9900;
+    --color-bug-90: #336600;
+    --color-bug-99: #1a3300;
   }
 }
 
@@ -52,8 +287,8 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--normal-00);
-  color: var(--normal-90);
+  background: var(--color-normal-00);
+  color: var(--color-normal-90);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
