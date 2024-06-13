@@ -1,4 +1,5 @@
 export interface ISpinnerProps {
-  color?: string
-  text?: string
+  color?: string;
+  size?: string;
+  text?: string;
 }

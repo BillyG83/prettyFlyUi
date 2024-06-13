@@ -15,7 +15,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Spinner: Story = {
+  args: {},
+};
+
+export const Color: Story = {
   args: {
-    color: "var(--water-30)",
+    color: "var(--color-grass-50)",
   },
 };
