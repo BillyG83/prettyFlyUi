@@ -12,7 +12,11 @@ const Spinner = ({
         className={styles.spinner}
         style={{ borderTopColor: color, height: size, width: size }}
       />
-      {text && text}
+      {text && (
+        <p className={styles.text} style={{ fontSize: size }}>
+          {text}
+        </p>
+      )}
     </div>
   );
 };

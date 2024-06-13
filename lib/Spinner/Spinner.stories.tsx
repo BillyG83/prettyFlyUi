@@ -20,6 +20,26 @@ export const Spinner: Story = {
 
 export const Color: Story = {
   args: {
-    color: "var(--color-grass-50)",
+    color: "green",
+  },
+};
+
+export const Size: Story = {
+  args: {
+    size: "40px",
+  },
+};
+
+export const Text: Story = {
+  args: {
+    text: "fetching",
+  },
+};
+
+export const Demo: Story = {
+  args: {
+    color: "var(--color-grass-70)",
+    size: "calc(var(--size) * 8)",
+    text: "fetching",
   },
 };
