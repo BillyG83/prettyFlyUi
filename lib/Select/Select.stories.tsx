@@ -27,3 +27,4 @@ export const Initial: Story = {
     ),
   },
 };
+Initial.name = "Select";

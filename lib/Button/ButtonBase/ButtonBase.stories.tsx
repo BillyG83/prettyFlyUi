@@ -26,3 +26,4 @@ export const Initial: Story = {
     children: "Hello World!",
   },
 };
+Initial.name = "Button Base";
