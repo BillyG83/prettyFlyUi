@@ -16,8 +16,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Initial: Story = {
   args: {
-    id: "input",
     placeholder: "enter text",
   },
 };
-Initial.name = "Input";
+Initial.storyName = "Input";
+
+export const Disabled: Story = {
+  args: {
+    placeholder: "enter text",
+    disabled: true,
+  },
+};

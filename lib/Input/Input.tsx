@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { TInputProps } from "./types";
 import styles from "./styles.module.css";
-import focusStyles from "../styles/focus.module.css";
+import inputStyles from "../styles/input.module.css";
 
 const Input = (props: TInputProps) => {
   return (
@@ -9,7 +9,8 @@ const Input = (props: TInputProps) => {
       {...props}
       className={clsx(
         styles.input,
-        focusStyles.focus,
+        inputStyles.focus,
+        { [inputStyles.disabled]: Boolean(props.disabled) },
         props.className,
         "pf-input"
       )}
