@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const Input = (props: ILabelProps) => {
   return (
-    <label className={clsx(styles.label, props.className)}>
+    <label className={clsx(styles.label, props.className, "pf-label")}>
       {props.children}
     </label>
   );

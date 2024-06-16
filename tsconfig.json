@@ -22,9 +22,7 @@
 
     /* Linting */
     "paths": {
-      "@/*": ["./*"],
-      "@/lib/*": ["./lib/*"],
-      "@/storybook/*": ["./storybook/*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["lib"],

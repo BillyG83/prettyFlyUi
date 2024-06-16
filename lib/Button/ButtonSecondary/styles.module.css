@@ -2,4 +2,5 @@
   background-color: transparent;
   border: 1px solid var(--color-water-70);
   color: var(--color-water-70);
+  padding: calc(var(--space) * 2);
 }
