@@ -1,7 +1,8 @@
 import clsx from "clsx";
+import { Spinner } from "../../Spinner";
 import { IButtonProps } from "../types";
 import styles from "./styles.module.css";
-import focusStyles from "../../styles/focus.module.css";
+import inputStyles from "../../styles/input.module.css";
 
 const ButtonBase = ({ children, isLoading, ...props }: IButtonProps) => {
   return (
@@ -9,7 +10,8 @@ const ButtonBase = ({ children, isLoading, ...props }: IButtonProps) => {
       {...props}
       className={clsx(
         styles.buttonBase,
-        focusStyles.focus,
+        inputStyles.focus,
+        { [inputStyles.disabled]: Boolean(props.disabled) },
         props.className,
         "pf-button-base"
       )}
@@ -17,6 +19,7 @@ const ButtonBase = ({ children, isLoading, ...props }: IButtonProps) => {
       type={props.type || "button"}
     >
       {children}
+      {isLoading && <Spinner />}
     </button>
   );
 };

@@ -3,12 +3,12 @@
   background-color: transparent;
   border-radius: var(--size);
   border: none;
-  color: var(--color-normal-90);
+  color: var(--color-normal-10);
   cursor: pointer;
   display: flex;
   font-size: 14px;
   font-weight: 600;
-  gap: 12px;
+  gap: calc(var(--size) * 3);
   justify-content: center;
   margin: 0;
   outline: none;

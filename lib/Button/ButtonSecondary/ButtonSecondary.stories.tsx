@@ -26,4 +26,18 @@ export const Initial: Story = {
     children: "Hello World!",
   },
 };
-Initial.name = "Button Secondary";
+Initial.storyName = "Button Secondary";
+
+export const Disabled: Story = {
+  args: {
+    children: "Hello World!",
+    disabled: true,
+  },
+};
+
+export const IsLoading: Story = {
+  args: {
+    children: "Hello World!",
+    isLoading: true,
+  },
+};
