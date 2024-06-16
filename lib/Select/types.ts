@@ -1,8 +1,10 @@
-import { ReactNode, SelectHTMLAttributes } from "react";
+import { SelectHTMLAttributes } from "react";
 
 type BaseSelectProps = SelectHTMLAttributes<HTMLSelectElement>;
 
 export interface ISelectProps extends BaseSelectProps {
-  children: ReactNode;
+  children:
+    | React.ReactElement<typeof Option>
+    | React.ReactElement<typeof Option>[];
   isLoading?: boolean;
 }
