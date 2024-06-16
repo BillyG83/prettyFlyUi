@@ -1,0 +1,6 @@
+/* STORYBOOK */
+.sb-show-main,
+.docs-story {
+  background-color: var(--color-normal-99);
+  color: var(--color-normal-10);
+}
