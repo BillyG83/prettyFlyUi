@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Initial: Story = {
   args: {},
 };
-Initial.name = "Spinner";
+Initial.storyName = "Spinner";
 
 export const Color: Story = {
   args: {
